@@ -8,6 +8,7 @@ import { ViewtodoComponent } from './viewtodo/viewtodo.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 const myRouter:Routes=[
   {
@@ -31,7 +32,8 @@ const myRouter:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRouter),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
